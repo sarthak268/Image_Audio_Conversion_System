@@ -29,9 +29,3 @@ def apply_linear_prediction(l):
 			diff_y = l[i][1] - predicted_y
 			new.append([diff_x,diff_y])
 	return new
-
-y = [1,2,3,4,5,6,7,8,9,10]
-x=lr2xy(y)
-print (x)
-z=apply_linear_prediction(x)
-print(z)
