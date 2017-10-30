@@ -71,9 +71,19 @@ for i = 1:sz(1)
     end 
 end
 
-sound(aud,44100[y,fs] = audioread('/Users/sarthakbhagat/Desktop/sns/test.wav');
-);
-%later add fs
+%sound(aud,44100);
 
+audiowrite('/Users/sarthakbhagat/Desktop/sns/testoutput.wav',aud,44100);
+
+%%
+aud1 = audioread('/Users/sarthakbhagat/Desktop/sns/test.wav');
+aud2 = audioread('/Users/sarthakbhagat/Desktop/sns/testoutput.wav');
+
+subplot(2,1,1);
+plot(aud1);
+axis([0 9*10^6 -2 2]);
+subplot(2,1,2);
+plot(aud2);
+axis([0 9*10^6 -2 2]);
 
 
