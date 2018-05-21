@@ -1,6 +1,6 @@
 # Image-Audio Encryption-Decryption System
 
-A system that converts audio to image and visa versa. Used two algorithms for this : 
+A system that converts audio to image and visa versa. Used two algorithms for this : <br>
 (1) Lossy: Losses data but requires less space. Compressed the data to 18% of original size.<br>
 (2) Lossless: Retains all original data but requires more space than lossy. Compressed data to 72.2% of original size.
 
